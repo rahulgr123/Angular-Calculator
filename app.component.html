@@ -1,0 +1,37 @@
+
+  <h1 class="heading">{{title}}</h1>
+
+  <div class="calculator">
+    <table class="calculatorbody">
+      <tr>
+        <td class="show" colspan="4">{{content}}</td>
+      </tr>
+      <tr>
+        <td class="cell" colspan="4"></td>
+      </tr>
+      <tr>
+        <td class="cell"><button class="key" type="button" (click)="displayContent('1')">1</button></td>
+        <td class="cell"><button class="key" type="button" (click)="displayContent('2')">2</button></td>
+        <td class="cell"><button class="key" type="button" (click)="displayContent('3')">3</button></td>
+        <td class="cell"><button class="key" type="button" (click)="resetDisplay()">reset</button></td>
+      </tr>
+      <tr>
+        <td class="cell"><button class="key" type="button" (click)="displayContent('4')">4</button></td>
+        <td class="cell"><button class="key" type="button" (click)="displayContent('5')">5</button></td>
+        <td class="cell"><button class="key" type="button" (click)="displayContent('6')">6</button></td>
+        <td class="cell"><button class="key" type="button" (click)="setChoice(1, '+')">+</button></td>
+      </tr>
+      <tr>
+        <td class="cell"><button class="key" type="button" (click)="displayContent('7')">7</button></td>
+        <td class="cell"><button class="key" type="button" (click)="displayContent('8')">8</button></td>
+        <td class="cell"><button class="key" type="button" (click)="displayContent('9')">9</button></td>
+        <td class="cell"><button class="key" type="button" (click)="setChoice(2, '-')">-</button></td>
+      </tr>
+      <tr>
+        <td class="cell"><button class="key" type="button" (click)="setChoice(3, 'x')">x</button></td>
+        <td class="cell"><button class="key" type="button" (click)="displayContent('0')">0</button></td>
+        <td class="cell"><button class="key" type="button" (click)="setChoice(4, '/')">/</button></td>
+        <td class="cell"><button class="key" type="button"  (click)="calculate()">Ans</button></td>
+      </tr>
+    </table>
+  </div>
